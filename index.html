@@ -92,17 +92,28 @@
                 <h3 class="title">Styret</h3>
                 <p class="subtitle">Dette er følgende styret for ProgNett. Styret består av leder, nestleder, teknisk ansvarlig og to
 styremedlemmer.</p>
+</div>
+
                 <div class="carousel">
-                    <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/250/250/nature/1"></a>
-                    <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
-                    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/250/250/nature/3"></a>
-                    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/250/250/nature/4"></a>
-                    <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/250/250/nature/5"></a>
-                    <div class="info">
-                        <h4>hello</h4>
-                    </div>
+                    <a class="carousel-item" href="#mattis!" name="Mattis Bratland" title="Leder" email="mattisbr@uio.no">
+                        <img height="200" src="img/mattis.jpg"></a>
+                    <a class="carousel-item" href="#hans!" name="Hans Christian Tranøy Jenvild" title="Nestleder">
+                        <img height="200" src="img/hans.jpg"></a>
+                    <a class="carousel-item" href="#benjamin!" name="Benjamin Breiby" title="Styremedlem">
+                        <img src="http://lorempixel.com/250/250/nature/3"></a>
+                    <a class="carousel-item" href="#salman!" name="Arild" title="Økonomisk ansvarlig">
+                        <img src="http://lorempixel.com/250/250/nature/4"></a>
+                    <a class="carousel-item" href="#salman!" name="Salman Ahmed" title="Økonomisk ansvarlig" email="salmanah@uio.no">
+                        <img height="200" src="img/salman.jpg"></a>
+                    <a class="carousel-item" href="#deep!" name="Deep Singh" title="Teknisk Ansvarlig" email="jagatds@uio.no">
+                        <img src="img/deep.jpg"></a>
                 </div>
-            </div>
+
+                <div class="board-info">
+                    <h5 id="board-name">Mattis Bratland</h5>
+                    <span id="board-title">Leder</span>
+                    <p id="board-email">mattisbr@uio.no</p>
+                </div>
         </section>
 
         <section id="contact-us">
@@ -115,27 +126,27 @@ styremedlemmer.</p>
                             <form class="col s12">
                                 <div class="row">
                                     <div class="input-field col s6">
-                                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                        <input placeholder="Placeholder" id="first_name" type="text" class="validate" required>
                                         <label for="first_name">Navn</label>
                                     </div>
                                     <div class="input-field col s6">
-                                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                        <input placeholder="Placeholder" id="first_name" type="email" class="validate" required>
                                         <label for="first_name">Email</label>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <textarea placeholder="beskjed" rows="10" id="textarea1" class="materialize-textarea"></textarea>
+                                        <textarea placeholder="beskjed" rows="10" id="textarea1" class="materialize-textarea" required></textarea>
                                         <label for="password">Password</label>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <a class=" center-align button-filled waves-effect waves-light btn-large">Utforsk Slack</a>
+                                    <center><input type="submit" value="Send Melding" class=" button-filled waves-effect waves-light btn-large"></input></center>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="col s5 push-s1" style="position: relative; top: 50%; height: 100%;">
+                    <div class="col s5 push-s1 contact-other">
                         <h5>Andre måter å nå oss på:</h5>
                         <p><label>Telefon: </label></p>
                         <p><label>Email: </label></p>
@@ -169,7 +180,7 @@ styremedlemmer.</p>
             </div>
         </section>
 
-        <section id="instagram">
+        <!-- <section id="instagram">
             <h3 class="title">Instagram</h3>
 
             <div class="row">
@@ -192,13 +203,13 @@ styremedlemmer.</p>
                     <img src="tile.png" alt="">
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <footer>
             <div class="row" style="display: flex;">
                 <div class="col s5" style="display: flex; flex-direction: column; justify-content: center; align-items: center">
-                    <div style="width: 40vh; display: flex; justify-content: space-between;">
-                    
+                    <div style="width: 20rem; display: flex; justify-content: space-between;">
+
                         <img src="tile.png" width="50" height="50" alt="">
                         <img src="tile.png" width="50" height="50" alt="">
                         <img src="tile.png" width="50" height="50" alt="">
@@ -207,9 +218,9 @@ styremedlemmer.</p>
 
                     <br>
                     <div>
-                        Copyright (c) 2017. Alle rettigheter reservert.
+                        Copyright © 2017. Alle rettigheter reservert.
                         <br>
-                        <center> Created by <a href="www.nezt.no"> NEZT </a> </center>
+                        <center> <label> Utviklet av <a href="www.nezt.no"> NEZT </a> </label> </center>
                     </div>
                 </div>
 
@@ -220,7 +231,8 @@ styremedlemmer.</p>
                     <p>Svett</p>
                     <p>PISK</p>
                 </div>
-                <div class="col s2">
+
+                <div class="navigiton col s2">
                     <label for=""> Naviger </label>
                     <p>Hjem</p>
                     <p>Om Oss</p>
@@ -228,18 +240,48 @@ styremedlemmer.</p>
                     <p>Kontakt Oss</p>
                 </div>
 
-                <div class="col s3">
+                <div class="col s4">
                     <label for=""> Bliss Status </label>
 
                     <div class="card white lighten-1 z-depth-3">
                         <div class="card-content black-text">
-                            <p>Kjøleskap on the way!</p>
+
+                            <svg width="57px" height="51px" viewBox="0 0 57 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+                                <desc>Created with Sketch.</desc>
+                                <defs></defs>
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Desktop-HD" transform="translate(-1000.000000, -3286.000000)">
+                                        <g id="Group-4" transform="translate(-368.000000, -259.000000)">
+                                            <g id="Footer" transform="translate(368.000000, 3420.000000)">
+                                                <g id="Bliss-Status" transform="translate(984.000000, 99.000000)">
+                                                    <g id="alarm" transform="translate(16.000000, 27.000000)">
+                                                        <g id="Capa_1">
+                                                            <path d="M32.3,7.54716981 L32.3,3.77358491 C32.3,1.68962264 30.59855,0 28.5,0 C26.40145,0 24.7,1.68962264 24.7,3.77358491 L24.7,7.61509434" id="Shape" stroke="#DC9628" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            <path d="M15.66645,43.9981132 C25.8324,45.740566 31.49155,45.740566 41.65845,43.9981132 L50.67395,42.4528302 L50.67395,42.4528302 C46.2232,38.059434 43.7228,32.6273585 43.7228,26.4150943 L43.7228,17.9245283 C43.7589,12.2198113 39.96365,8.03962264 36.1741,6.31981132 C31.42505,4.16415094 25.89985,4.15566038 21.1584,6.32735849 C17.40305,8.04716981 13.3361,12.2245283 13.3,17.9245283 L13.3,26.4150943 C13.3,32.6273585 11.10075,38.059434 6.65,42.4528302 L6.65,42.4528302 L15.66645,43.9981132 Z" id="Shape" fill="#EEAF4B" fill-rule="nonzero"></path>
+                                                            <path d="M18.05,20.7462264 L18.0443,20.7462264 C17.5199,20.7424528 17.09715,20.3179245 17.1,19.7971698 C17.1285,15.3801887 20.6644,12.5867925 22.7506,11.6330189 C26.40715,9.95849057 30.9149,9.96132075 34.59615,11.6311321 C35.07305,11.8471698 35.283,12.4066038 35.06545,12.8811321 C34.8479,13.354717 34.28455,13.5641509 33.80575,13.3462264 C30.61945,11.9 26.7102,11.8962264 23.5467,13.3462264 C21.86805,14.1141509 19.0228,16.3396226 19.00095,19.8084906 C18.99715,20.3273585 18.57155,20.7462264 18.05,20.7462264 Z" id="Shape" fill="#FBD490" fill-rule="nonzero"></path>
+                                                            <path d="M20.8107,44.7735849 C22.1825,47.8566038 25.1826,50 28.67385,50 C32.16605,50 35.16615,47.8556604 36.53795,44.7707547 C30.90635,45.4801887 26.4385,45.4811321 20.8107,44.7735849 Z" id="Shape" fill="#DC9628" fill-rule="nonzero"></path>
+                                                            <path d="M3.89025,33.9311321 C3.64705,33.9311321 3.40385,33.8386792 3.2186,33.654717 C1.14285,31.5933962 0,28.8490566 0,25.9273585 C0,23.004717 1.14285,20.2613208 3.2186,18.2009434 C3.59005,17.8320755 4.19045,17.8320755 4.5619,18.2009434 C4.93335,18.5698113 4.93335,19.1660377 4.5619,19.5349057 C2.84525,21.2396226 1.9,23.509434 1.9,25.9273585 C1.9,28.345283 2.84525,30.6150943 4.5619,32.3198113 C4.93335,32.6886792 4.93335,33.2849057 4.5619,33.6537736 C4.3757,33.8386792 4.13345,33.9311321 3.89025,33.9311321 Z" id="Shape" fill="#F2ECBF" fill-rule="nonzero"></path>
+                                                            <path d="M7.88975,31.7830189 C7.64655,31.7830189 7.40335,31.690566 7.2181,31.5066038 C4.04795,28.3584906 4.04795,23.2349057 7.2181,20.0877358 C7.58955,19.7188679 8.18995,19.7188679 8.5614,20.0877358 C8.93285,20.4566038 8.93285,21.0528302 8.5614,21.4216981 C6.1313,23.8349057 6.1313,27.7603774 8.5614,30.1726415 C8.93285,30.5415094 8.93285,31.1377358 8.5614,31.5066038 C8.37615,31.6915094 8.13295,31.7830189 7.88975,31.7830189 Z" id="Shape" fill="#F2ECBF" fill-rule="nonzero"></path>
+                                                            <path d="M53.10975,33.9311321 C52.86655,33.9311321 52.62335,33.8386792 52.4381,33.654717 C52.06665,33.2858491 52.06665,32.6896226 52.4381,32.3207547 C54.15475,30.6150943 55.1,28.345283 55.1,25.9273585 C55.1,23.509434 54.15475,21.2386792 52.4381,19.5349057 C52.06665,19.1660377 52.06665,18.5698113 52.4381,18.2009434 C52.80955,17.8320755 53.40995,17.8320755 53.7814,18.2009434 C55.85715,20.2622642 57,23.0056604 57,25.9273585 C57,28.8490566 55.85715,31.5933962 53.7814,33.6537736 C53.59615,33.8386792 53.35295,33.9311321 53.10975,33.9311321 Z" id="Shape" fill="#F2ECBF" fill-rule="nonzero"></path>
+                                                            <path d="M49.11025,31.7830189 C48.86705,31.7830189 48.62385,31.690566 48.4386,31.5066038 C48.06715,31.1377358 48.06715,30.5415094 48.4386,30.1726415 C50.8687,27.759434 50.8687,23.8339623 48.4386,21.4216981 C48.06715,21.0528302 48.06715,20.4566038 48.4386,20.0877358 C48.81005,19.7188679 49.41045,19.7188679 49.7819,20.0877358 C52.95205,23.2358491 52.95205,28.359434 49.7819,31.5066038 C49.59665,31.6915094 49.35345,31.7830189 49.11025,31.7830189 Z" id="Shape" fill="#F2ECBF" fill-rule="nonzero"></path>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+
+
+                            <div class="valign-wrapper" style="display: inline-block">
+                                <p id="" style="display: inline-block">display: inline-block;</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div class="logo"><img src="" alt=""> fwefwef</div>
         </footer>
 
         <!-- {{ message }}

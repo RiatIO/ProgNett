@@ -1,3 +1,6 @@
+* {
+  font-family: 'Source Sans Pro' !important; }
+
 body {
   padding: 0;
   margin: 0;
@@ -12,15 +15,19 @@ body {
   border-radius: 40px;
   /* 18:35:18:35: */
   font-family: SourceSansPro-Regular;
-  font-size: 16px;
+  font-size: 14px;
   color: #FFFFFF;
-  width: 200px; }
+  width: 200px;
+  height: 100%; }
 
 .button-hallow {
   border: 3px solid #FFFFFF;
   border-radius: 40px;
+  font-size: 14px;
   background-color: transparent;
-  width: 200px; }
+  width: 200px;
+  height: 100%;
+  margin-left: 10px; }
   .button-hallow:hover {
     background-color: white;
     color: black; }
@@ -44,10 +51,9 @@ header {
       header .header-content .card .card-title {
         text-align: center;
         text-transform: uppercase;
-        /* ARRANGEMENTER: */
-        font-family: Roboto-Bold;
+        font-weight: 600;
         font-size: 25px;
-        color: #7795F8;
+        color: #24B47E;
         letter-spacing: 0.8px; }
     header .header-content .title {
       /* Velkommen til ProgNe: */
@@ -92,32 +98,54 @@ section {
     line-height: 1.8;
     color: #868686; }
 
+#about-us .container {
+  width: 50%; }
+
 #board {
   margin: 0;
   width: 100%;
   height: 100%;
   background-color: #f6f9fc; }
+  #board .container {
+    width: 50%; }
   #board h4 {
     text-align: center; }
   #board .carousel {
-    position: relative; }
-    #board .carousel .info {
-      position: absolute;
-      bottom: 0;
-      left: 45%; }
+    margin-top: 5rem;
+    height: 15rem;
+    text-align: center; }
+    #board .carousel .carousel-item img {
+      border-radius: 50%; }
+  #board .board-info {
+    width: 100%;
+    text-align: center; }
+    #board .board-info #board-name {
+      color: #6B7C93;
+      font-size: 26px;
+      font-weight: 600; }
+    #board .board-info #board-title {
+      color: #6B7C93;
+      font-size: 16px; }
+    #board .board-info #board-email {
+      color: #6B7C93;
+      font-weight: 200; }
 
-#contact-us input[type="text"], #contact-us textarea {
+#contact-us input[type='email'], #contact-us input[type="text"], #contact-us textarea {
   margin-top: 10px;
   /* Rectangle 29 Copy 3: */
   background: #F7F7F7;
   border: 1px solid #E3E3E3;
   padding-left: 10px; }
 
+#contact-us .contact-other {
+  margin-top: 3rem; }
+
 #misc {
   background-color: #f6f9fc;
   padding: 0;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  height: 17rem; }
   #misc .container {
     z-index: 5; }
   #misc:before {
@@ -141,7 +169,7 @@ section {
 #instagram {
   background-color: #f6f9fc; }
   #instagram .col.s2 > img {
-    height: 20vh;
+    height: 15rem;
     z-index: 2; }
   #instagram .col.s2 .overlay {
     height: 10vh;
@@ -149,14 +177,20 @@ section {
 
 footer {
   background-color: #f6f9fc;
-  padding: 0 100px; }
+  padding: 0 100px;
+  height: 100%;
+  height: 17rem; }
+  footer .resources > p {
+    line-height: 1.1;
+    color: #8998AA; }
+  footer .navigiton > p {
+    line-height: 1.1;
+    color: #8998AA; }
   footer .col > label {
     /* RESURSER: */
     text-transform: uppercase;
     font-family: SourceSansPro-Semibold;
     font-size: 15px;
     color: #8998AA;
-    letter-spacing: 0.75px; }
-  footer .logo {
-    position: relative;
-    left: 1px; }
+    letter-spacing: 0.75px;
+    font-weight: 600; }
