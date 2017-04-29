@@ -1,0 +1,162 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; }
+
+.button-filled {
+  /* BG: */
+  background: #3ECF8E;
+  border-radius: 40px;
+  /* 18:35:18:35: */
+  font-family: SourceSansPro-Regular;
+  font-size: 16px;
+  color: #FFFFFF;
+  width: 200px; }
+
+.button-hallow {
+  border: 3px solid #FFFFFF;
+  border-radius: 40px;
+  background-color: transparent;
+  width: 200px; }
+  .button-hallow:hover {
+    background-color: white;
+    color: black; }
+
+header {
+  overflow: hidden;
+  position: relative;
+  height: 80vh;
+  /* Rectangle: */
+  background-image: linear-gradient(-21deg, #A6FFCB 0%, #05D5FF 25%, #5533FF 80%); }
+  header nav {
+    background-color: transparent;
+    box-shadow: none; }
+  header .header-content {
+    margin-top: 10vh; }
+    header .header-content .card {
+      overflow: visible;
+      z-index: 5;
+      height: 55vh;
+      width: 130%; }
+      header .header-content .card .card-title {
+        text-align: center;
+        text-transform: uppercase;
+        /* ARRANGEMENTER: */
+        font-family: Roboto-Bold;
+        font-size: 25px;
+        color: #7795F8;
+        letter-spacing: 0.8px; }
+    header .header-content .title {
+      /* Velkommen til ProgNe: */
+      font-family: SourceSansPro-Regular;
+      font-size: 42px;
+      color: #FFFFFF;
+      letter-spacing: 0.06px; }
+    header .header-content .subtitle {
+      font-family: SourceSansPro-Regular;
+      font-size: 17px;
+      color: #D9FCFF !important;
+      letter-spacing: 0.42px;
+      line-height: 28px; }
+  header:after {
+    content: '';
+    z-index: 0;
+    height: 25vh;
+    width: 110%;
+    position: absolute;
+    bottom: 0;
+    left: -5vh;
+    background-color: white;
+    -webkit-transform: rotate(-6.5deg);
+    -webkit-transform-origin: 100% 0 0;
+    -moz-transform: rotate(-6.5deg);
+    -moz-transform-origin: 100% 0 0;
+    -ms-transform: rotate(-6.5deg);
+    -ms-transform-origin: 100% 0 0;
+    transform: rotate(-6.5deg);
+    transform-origin: 100% 0 0; }
+
+section {
+  padding: 50px; }
+  section .title {
+    text-align: center;
+    color: #24B47E;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-transform: uppercase; }
+  section .subtitle {
+    text-align: center;
+    line-height: 1.8;
+    color: #868686; }
+
+#board {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f6f9fc; }
+  #board h4 {
+    text-align: center; }
+  #board .carousel {
+    position: relative; }
+    #board .carousel .info {
+      position: absolute;
+      bottom: 0;
+      left: 45%; }
+
+#contact-us input[type="text"], #contact-us textarea {
+  margin-top: 10px;
+  /* Rectangle 29 Copy 3: */
+  background: #F7F7F7;
+  border: 1px solid #E3E3E3;
+  padding-left: 10px; }
+
+#misc {
+  background-color: #f6f9fc;
+  padding: 0;
+  overflow: hidden;
+  position: relative; }
+  #misc .container {
+    z-index: 5; }
+  #misc:before {
+    content: '';
+    z-index: 0;
+    min-height: 12rem;
+    width: 110%;
+    position: absolute;
+    top: -20vh;
+    left: -5vh;
+    background-color: white;
+    -webkit-transform: rotate(-6deg);
+    -webkit-transform-origin: 100% 0 0;
+    -moz-transform: rotate(-6deg);
+    -moz-transform-origin: 100% 0 0;
+    -ms-transform: rotate(-6deg);
+    -ms-transform-origin: 100% 0 0;
+    transform: rotate(-6deg);
+    transform-origin: 100% 0 0; }
+
+#instagram {
+  background-color: #f6f9fc; }
+  #instagram .col.s2 > img {
+    height: 20vh;
+    z-index: 2; }
+  #instagram .col.s2 .overlay {
+    height: 10vh;
+    background-color: red; }
+
+footer {
+  background-color: #f6f9fc;
+  padding: 0 100px; }
+  footer .col > label {
+    /* RESURSER: */
+    text-transform: uppercase;
+    font-family: SourceSansPro-Semibold;
+    font-size: 15px;
+    color: #8998AA;
+    letter-spacing: 0.75px; }
+  footer .logo {
+    position: relative;
+    left: 1px; }

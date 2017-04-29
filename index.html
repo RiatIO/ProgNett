@@ -1,0 +1,276 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ProgNett</title>
+
+    <meta name="description" content="">
+    <meta name="author" content="NEZT">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Vendor imports of css -->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- all of the css for the page -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!--   ** VUE Components **  -->
+    <script type="text/x-template" id="test">
+        <p> {{ lol }} </p>
+    </script>
+    <!--   ** VUE Components **   -->
+
+    <!--   ** DOM **  -->
+    <main id="app">
+
+        <header>
+            <nav>
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#!" class="brand-logo">Logo</a>
+                        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons ">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="#about-us">Om Oss</a></li>
+                            <li><a href="#board">Styret</a></li>
+                            <li><a href="#contact-us">Kontakt Oss</a></li>
+                            <li><a href="#misc">Vedtekter</a></li>
+                        </ul>
+                        <ul class="side-nav right" id="mobile-demo">
+                            <li><a href="sass.html">Sass</a></li>
+                            <li><a href="badges.html">Components</a></li>
+                            <li><a href="collapsible.html">Javascript</a></li>
+                            <li><a href="mobile.html">Mobile</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-content container">
+                <!-- Page Content goes here -->
+                <div class="row">
+                    <div class="col s6 push-s7">
+                        <div class="col s12 m9">
+                            <div class="card white lighten-1 z-depth-3">
+                                <div class="card-content black-text">
+                                    <span class="card-title">Arrangementer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-content col s6 pull-s6">
+                        <h1 class="title white-text">Velkommen til ProgNett</h1>
+                        <p class="subtitle flow-text white-text">Vi er en linjeforening på Universitet i Oslo for studiet Programmering og Nettverk. Vi har som mål å hjelpe nye studenter med koding og spre intellektuell glede. Vi har derfor laget en tjenste lignende StackOverflow, der du kan
+                            få hjelp med det du måtte trenge!</p>
+                        <br>
+                        <a class="button-filled waves-effect waves-light btn-large">Utforsk Slack</a>
+                        <a href="#contact-us" class="button-hallow aves-effect waves-light btn-large">Kom i Kontakt</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about-us">
+            <div class="container">
+                <h3 class="title"> Om Oss</h3>
+
+                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </section>
+
+        <section id="board">
+            <div class="container">
+                <h3 class="title">Styret</h3>
+                <p class="subtitle">Dette er følgende styret for ProgNett. Styret består av leder, nestleder, teknisk ansvarlig og to
+styremedlemmer.</p>
+                <div class="carousel">
+                    <a class="carousel-item" href="#one!"><img src="http://lorempixel.com/250/250/nature/1"></a>
+                    <a class="carousel-item" href="#two!"><img src="http://lorempixel.com/250/250/nature/2"></a>
+                    <a class="carousel-item" href="#three!"><img src="http://lorempixel.com/250/250/nature/3"></a>
+                    <a class="carousel-item" href="#four!"><img src="http://lorempixel.com/250/250/nature/4"></a>
+                    <a class="carousel-item" href="#five!"><img src="http://lorempixel.com/250/250/nature/5"></a>
+                    <div class="info">
+                        <h4>hello</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact-us">
+            <div class="container">
+                <h3 class="title">Kontakt Oss</h3>
+
+                <div class="row">
+                    <div class="col s7">
+                        <div class="row">
+                            <form class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                        <label for="first_name">Navn</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                        <label for="first_name">Email</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <textarea placeholder="beskjed" rows="10" id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="password">Password</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a class=" center-align button-filled waves-effect waves-light btn-large">Utforsk Slack</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col s5 push-s1" style="position: relative; top: 50%; height: 100%;">
+                        <h5>Andre måter å nå oss på:</h5>
+                        <p><label>Telefon: </label></p>
+                        <p><label>Email: </label></p>
+                        <p><label>Adresse: </label></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="misc">
+            <div class="container">
+                <div class="row">
+                    <div class="col s6">
+                        <div class="card white lighten-1 z-depth-3">
+                            <div class="card-content black-text">
+                                <span class="card-title">Card Title</span>
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s6">
+                        <div class="card white lighten-1 z-depth-3">
+                            <div class="card-content black-text">
+                                <span class="card-title">Card Title</span>
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="instagram">
+            <h3 class="title">Instagram</h3>
+
+            <div class="row">
+                <div class="col s2">
+                    <img src="tile.png" alt="">
+                </div>
+                <div class="col s2">
+                    <img src="tile.png" alt="">
+                </div>
+                <div class="col s2">
+                    <img src="tile.png" alt="">
+                </div>
+                <div class="col s2">
+                    <img src="tile.png" alt="">
+                </div>
+                <div class="col s2">
+                    <img src="tile.png" alt="">
+                </div>
+                <div class="col s2">
+                    <img src="tile.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="row" style="display: flex;">
+                <div class="col s5" style="display: flex; flex-direction: column; justify-content: center; align-items: center">
+                    <div style="width: 40vh; display: flex; justify-content: space-between;">
+                    
+                        <img src="tile.png" width="50" height="50" alt="">
+                        <img src="tile.png" width="50" height="50" alt="">
+                        <img src="tile.png" width="50" height="50" alt="">
+                        <img src="tile.png" width="50" height="50" alt="">
+                    </div>
+
+                    <br>
+                    <div>
+                        Copyright (c) 2017. Alle rettigheter reservert.
+                        <br>
+                        <center> Created by <a href="www.nezt.no"> NEZT </a> </center>
+                    </div>
+                </div>
+
+                <div class="resources col s2">
+                    <label for=""> RESURSER </label>
+                    <p>UiO</p>
+                    <p>Slack</p>
+                    <p>Svett</p>
+                    <p>PISK</p>
+                </div>
+                <div class="col s2">
+                    <label for=""> Naviger </label>
+                    <p>Hjem</p>
+                    <p>Om Oss</p>
+                    <p>Styret</p>
+                    <p>Kontakt Oss</p>
+                </div>
+
+                <div class="col s3">
+                    <label for=""> Bliss Status </label>
+
+                    <div class="card white lighten-1 z-depth-3">
+                        <div class="card-content black-text">
+                            <p>Kjøleskap on the way!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logo"><img src="" alt=""> fwefwef</div>
+        </footer>
+
+        <!-- {{ message }}
+        <test></test> -->
+    </main>
+    <!--   ** DOM **  -->
+
+    <!--   ** Scripts **  -->
+    <!-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> -->
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/vue.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/vendor/materialize.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <!-- jquery/javascript frontend modifications -->
+    <script src="js/main.js"></script>
+
+    <!-- the vue script -->
+    <script src="js/app.js" charset="utf-8"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <!-- <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script> -->
+</body>
+
+</html>
