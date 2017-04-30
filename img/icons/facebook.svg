@@ -1,0 +1,16 @@
+
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-127.000000, -3274.000000)">
+            <g id="Btn_icon-/-Social-/-Facebook" transform="translate(127.000000, 3274.000000)">
+                <g>
+                    <rect id="Base_buttons" fill="#3A5695" x="0" y="0" width="50" height="50" rx="3"></rect>
+                    <path d="M28.6174863,19.4760638 C28.2349727,19.3643617 27.795082,19.2898936 27.3934426,19.2898936 C26.8961749,19.2898936 25.8251366,19.606383 25.8251366,20.2207447 L25.8251366,21.6914894 L28.3688525,21.6914894 L28.3688525,24.1675532 L25.8251366,24.1675532 L25.8251366,31 L23.2622951,31 L23.2622951,24.1675532 L22,24.1675532 L22,21.6914894 L23.2622951,21.6914894 L23.2622951,20.4441489 C23.2622951,18.5638298 24.1420765,17 26.2650273,17 C26.9918033,17 28.2923497,17.037234 29,17.2792553 L28.6174863,19.4760638 Z" id="Facebook-Icon" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

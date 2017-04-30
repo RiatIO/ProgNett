@@ -43,18 +43,23 @@ header {
     box-shadow: none; }
   header .header-content {
     margin-top: 10vh; }
-    header .header-content .card {
+    header .header-content .event-card {
       overflow: visible;
       z-index: 5;
       height: 55vh;
       width: 130%; }
-      header .header-content .card .card-title {
+      header .header-content .event-card .card-title {
         text-align: center;
         text-transform: uppercase;
         font-weight: 600;
         font-size: 25px;
         color: #24B47E;
         letter-spacing: 0.8px; }
+    header .header-content .error {
+      margin-top: 2rem; }
+      header .header-content .error p {
+        font-size: 16px;
+        color: #8998AA; }
     header .header-content .title {
       /* Velkommen til ProgNe: */
       font-family: SourceSansPro-Regular;
@@ -148,6 +153,18 @@ section {
   height: 17rem; }
   #misc .container {
     z-index: 5; }
+  #misc .card .card-content .card-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #B76AC4;
+    letter-spacing: 1.1px;
+    text-transform: uppercase; }
+  #misc .card .card-content p {
+    color: #6B7C93; }
+  #misc .card .card-logo {
+    height: 150px; }
+    #misc .card .card-logo .valign-wrapper {
+      height: 100%; }
   #misc:before {
     content: '';
     z-index: 0;

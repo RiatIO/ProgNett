@@ -59,7 +59,7 @@ header {
         .text-content {
         }
 
-        .card {
+        .event-card {
             overflow: visible;
             z-index: 5;
             height: 55vh;
@@ -72,6 +72,15 @@ header {
                 font-size: 25px;
                 color: $green;
                 letter-spacing: 0.8px;
+            }
+        }
+
+        .error {
+            margin-top: 2rem;
+
+            p {
+                font-size: 16px;
+                color: #8998AA;
             }
         }
 
@@ -216,6 +225,30 @@ section {
         z-index: 5;
     }
 
+    .card {
+        .card-content {
+            .card-title {
+                font-size: 17px;
+                font-weight: 600;
+                color: #B76AC4;
+                letter-spacing: 1.1px;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: #6B7C93;
+            }
+        }
+
+        .card-logo {
+            .valign-wrapper {
+                height: 100%;
+            }
+
+            height: 150px;
+        }
+    }
+
     &:before {
         content: '';
         z-index: 0;
@@ -260,7 +293,7 @@ footer {
     height: 100%;
 
     height: 17rem;
-    
+
 
     .resources > p {
         line-height: 1.1;
