@@ -41,12 +41,15 @@ header {
   header nav {
     background-color: transparent;
     box-shadow: none; }
+    header nav ul > li > a {
+      color: #D9FCFF; }
   header .header-content {
     margin-top: 10vh; }
     header .header-content .event-card {
       overflow: visible;
       z-index: 5;
       height: 55vh;
+      padding: 10px;
       width: 130%; }
       header .header-content .event-card .card-title {
         text-align: center;
@@ -142,8 +145,8 @@ section {
   border: 1px solid #E3E3E3;
   padding-left: 10px; }
 
-#contact-us .contact-other {
-  margin-top: 3rem; }
+#contact-us .container {
+  width: 50%; }
 
 #misc {
   background-color: #f6f9fc;
@@ -168,11 +171,11 @@ section {
   #misc:before {
     content: '';
     z-index: 0;
-    min-height: 12rem;
+    min-height: 14rem;
     width: 110%;
     position: absolute;
-    top: -20vh;
-    left: -5vh;
+    top: -14rem;
+    left: -5rem;
     background-color: white;
     -webkit-transform: rotate(-6deg);
     -webkit-transform-origin: 100% 0 0;
@@ -200,8 +203,20 @@ footer {
   footer .resources > p {
     line-height: 1.1;
     color: #8998AA; }
+    footer .resources > p a:link {
+      color: #8998AA; }
+    footer .resources > p a:visited {
+      color: #8998AA; }
   footer .navigiton > p {
     line-height: 1.1;
+    color: #8998AA; }
+    footer .navigiton > p a:link {
+      color: #8998AA; }
+    footer .navigiton > p a:visited {
+      color: #8998AA; }
+  footer .bliss img {
+    margin-right: 10px; }
+  footer .bliss p {
     color: #8998AA; }
   footer .col > label {
     /* RESURSER: */

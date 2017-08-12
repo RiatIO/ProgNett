@@ -1,0 +1,28 @@
+
+<svg width="83px" height="109px" viewBox="0 0 83 109" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M54.5,109 C84.5995189,109 109,84.5995189 109,54.5 C109,24.4004811 84.5995189,0 54.5,0 C24.4004811,0 0,24.4004811 0,54.5 C0,84.5995189 24.4004811,109 54.5,109 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-166.000000, -2639.000000)">
+            <g id="Group-4" transform="translate(-368.000000, -259.000000)">
+                <g id="Pink-Area-1" transform="translate(534.000000, 2857.000000)">
+                    <g id="Pink-Thing" transform="translate(-26.000000, 41.000000)">
+                        <g id="Path-2">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Mask" fill="#9251AC" xlink:href="#path-1"></use>
+                            <path d="M52,102 C73.5391052,102 91,83.8675324 91,61.5 C91,39.1324676 73.5391052,21 52,21 C30.4608948,21 13,39.1324676 13,61.5 C13,83.8675324 30.4608948,102 52,102 Z" id="Oval-4" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                            <path d="M71,61.0721642 C66.7499355,59.7428391 62.0050923,59 57,59 C38.7746033,59 24,68.8497355 24,81 C24,93.1502645 38.7746033,103 57,103 C71.5545665,103 83.9084194,96.7184165 88.2944329,88 L71,88 L71,61.0721642 Z" id="Combined-Shape" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                            <path d="M93.5,14 L55.5,52 C55.5,52 53.5,52.5 52,51 C50.5,49.5 37,45.5 33,60 C29,74.5 42,85.5 42,85.5 C42,85.5 66.500002,101.5 86,84 C86,84 101.999998,73 100.999998,52 L109.5,51.5 L115,16.5 L95,8" fill="#3ECF8E" mask="url(#mask-2)"></path>
+                            <circle id="Oval-3" fill="#3ECF8E" mask="url(#mask-2)" cx="105" cy="52" r="4"></circle>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
