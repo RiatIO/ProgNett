@@ -27,17 +27,45 @@
     <script type="text/x-template" id="bliss-status">
         <p> {{ data }} </p>
     </script>
+
+    <script type="text/x-template" id="contact-form">
+        <div class="row">
+            <div class="col s12">
+                <div class="row">
+                    <form class="col s12" v-on:submit.prevent="sendForm">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input placeholder="Ola Nordmann" v-model="form.name" id="first_name" type="text" class="validate" required>
+                                <label for="first_name">Navn</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input placeholder="ola@email.com" v-model="form.email" id="first_name" type="email" class="validate" required>
+                                <label for="first_name">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea placeholder="Hei! Jeg trenger hjelp med..." v-model="form.message" rows="10" id="textarea1" class="materialize-textarea" required></textarea>
+                                <label for="password">Beskjed</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <center><input type="submit" value="Send Melding" class=" button-filled waves-effect waves-light btn-large"></input></center>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </script>
     <!--   ** VUE Components **   -->
 
     <!--   ** DOM **  -->
     <main id="app">
-
-
         <header>
             <nav>
                 <div class="container">
                     <div class="nav-wrapper">
-                        <a href="#!" class="brand-logo">Logo</a>
+                        <!-- <a href="#!" class="brand-logo">Logo</a> -->
                         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons ">menu</i></a>
                         <ul class="right hide-on-med-and-down">
                             <li><a href="#about-us">Om Oss</a></li>
@@ -68,32 +96,17 @@
                                     <div class="row center-align error">
 
                                         <img src="img/404.png" alt="">
-                                        <p>Ingen kommende arrangementer for øyeblikket...</p>
+                                        <p>Ingen kommende arrangementer...</p>
                                     </div>
-
-                                    <!-- <div class="col s12 m12">
-                                        <div class="card horizontal">
-                                            <div class="card-image">
-                                                <img src="http://lorempixel.com/100/190/nature/6">
-                                            </div>
-                                            <div class="card-stacked">
-                                                <div class="card-content">
-                                                    <div class="valign-wrapper">
-                                                        <h5>This should be vertically aligned</h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="text-content col s6 pull-s6">
+                        <br>
                         <h1 class="title white-text">Velkommen til ProgNett</h1>
-                        <p class="subtitle flow-text white-text">Vi er en linjeforening på Universitet i Oslo for studiet Programmering og Nettverk. Vi har som mål å hjelpe nye studenter med koding og spre glede. Vi har derfor laget en tjenste lignende StackOverflow, der du kan
-                            få hjelp med det du måtte trenge!</p>
+                        <p class="subtitle flow-text white-text">Linjeforeningen for Programmering og Nettverk og Programmering og Systemarkitektur ved Universitet i Oslo.</p>
                         <br>
                         <a class="button-filled waves-effect waves-light btn-large">Utforsk Stack</a>
                         <a href="#contact-us" class="button-hallow aves-effect waves-light btn-large">Kom i Kontakt</a>
@@ -105,18 +118,14 @@
         <section id="about-us">
             <div class="container">
                 <h3 class="title"> Om Oss</h3>
-                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p class="subtitle">ProgNett er en studentforening ved Institutt for informatikk ved Universitetet i Oslo. Foreningens formål er å fremme det sosiale og faglige miljøet ved master- og bachelorprogrammene. Finn oss på programrommet Bliss 3427 eller følg oss på sosiale medier for å holde deg oppdatert om kommende arrangementer.</p>
             </div>
         </section>
 
         <section id="board">
             <div class="container">
-                <h3 class="title">Styret</h3>
-                <p class="subtitle">Dette er følgende styret for ProgNett. Styret består av leder, nestleder, teknisk ansvarlig og to
-styremedlemmer.</p>
-</div>
+                <h3 class="title">Nåværende Styre</h3>
+            </div>
 
                 <div class="carousel" data-aos="fade-left">
                     <a class="carousel-item" id="mattis!" href="#mattis!" name="Mattis Bratland" title="Leder" email="mattisbr@uio.no">
@@ -127,7 +136,7 @@ styremedlemmer.</p>
                         <img src="http://lorempixel.com/250/250/nature/3"></a>
                     <a class="carousel-item" href="#arild!" name="Arild" email="arild@uio.no" title="Styremedlem">
                         <img src="http://lorempixel.com/250/250/nature/4"></a>
-                    <a class="carousel-item" href="#salman!" name="Salman Ahmed" title="Økonomisk ansvarlig" email="salmanah@uio.no">
+                    <a class="carousel-item" href="#salman!" name="Salman Ahmed" title="Økonomisk Ansvarlig" email="salmanah@uio.no">
                         <img height="200" src="img/salman.jpg"></a>
                     <a class="carousel-item" id="deep" href="#deep!" name="Deep Singh" title="Teknisk Ansvarlig" email="jagatds@uio.no">
                         <img src="img/deep.jpg"></a>
@@ -144,33 +153,7 @@ styremedlemmer.</p>
             <div class="container">
                 <h3 class="title">Kontakt Oss</h3>
 
-                <div class="row">
-                    <div class="col s12">
-                        <div class="row">
-                            <form class="col s12">
-                                <div class="row">
-                                    <div class="input-field col s6">
-                                        <input placeholder="Ola Nordmann" id="first_name" type="text" class="validate" required>
-                                        <label for="first_name">Navn</label>
-                                    </div>
-                                    <div class="input-field col s6">
-                                        <input placeholder="ola@email.com" id="first_name" type="email" class="validate" required>
-                                        <label for="first_name">Email</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <textarea placeholder="Hei! Jeg ville bare å si ifra hvor kul linjeforeninger dere er!" rows="10" id="textarea1" class="materialize-textarea" required></textarea>
-                                        <label for="password">Beskjed</label>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <center><input type="submit" value="Send Melding" class=" button-filled waves-effect waves-light btn-large"></input></center>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                <contact-form></contact-form>
             </div>
         </section>
 
@@ -183,13 +166,13 @@ styremedlemmer.</p>
                                 <div class="row">
                                     <div class="col s2 card-logo">
                                         <div class="valign-wrapper">
-                                            <img src="img/icons/stack.svg" alt="">
+                                            <img src="img/icons/stack2.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="col s10">
                                         <div class="card-content black-text">
                                             <span class="card-title">Introduserer Stack  <img src="img/icons/arrow.svg" alt=""> </span>
-                                            <p>Vi har et StackOverflow lignende forum som alle studenter på UiO kan benytte seg av. Her vil vi svare dine tekniske spørsmål!</p>
+                                            <p>Vi har et forum som alle studenter på UiO kan benytte seg av. Her vil du få svar alle dine tekniske spørsmål.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -209,7 +192,7 @@ styremedlemmer.</p>
                                     <div class="col s10">
                                         <div class="card-content black-text">
                                             <span class="card-title">Våre Vedtekter <img src="img/icons/arrow.svg" alt=""></span>
-                                            <p>Finn våre vedtekter her. Husk at vedtekten kan endres etter generalforsamling. Finn du feil/uklarheter, vennligst kontakt oss.</p>
+                                            <p>Finn våre vedtekter her. Husk at vedtektene kan endres etter generalforsamling. Finn du feil/uklarheter, vennligst kontakt oss.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -252,8 +235,8 @@ styremedlemmer.</p>
 
                         <a href="https://www.facebook.com/groups/1468631983443165/?fref=ts"> <img src="img/icons/facebook.svg" width="50" height="50" alt=""> </a>
                         <a href="#"> <img src="img/icons/twitter.svg" width="50" height="50" alt=""> </a>
-                        <a href="#"> <img src="img/icons/gplus.svg" width="50" height="50" alt=""> </a>
                         <a href="#"> <img src="img/icons/instagram.svg" width="50" height="50" alt=""> </a>
+                        <a href="#"> <img src="img/icons/slack.svg" width="50" height="50" alt=""> </a>
                     </div>
 
                     <br>

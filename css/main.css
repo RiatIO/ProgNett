@@ -35,7 +35,7 @@ body {
 header {
   overflow: hidden;
   position: relative;
-  height: 80vh;
+  height: 650px;
   /* Rectangle: */
   background-image: linear-gradient(-21deg, #A6FFCB 0%, #05D5FF 25%, #5533FF 80%); }
   header nav {
@@ -44,13 +44,13 @@ header {
     header nav ul > li > a {
       color: #D9FCFF; }
   header .header-content {
-    margin-top: 10vh; }
+    margin-top: 80px; }
     header .header-content .event-card {
       overflow: visible;
       z-index: 5;
-      height: 55vh;
+      height: 450px;
       padding: 10px;
-      width: 130%; }
+      width: 450px; }
       header .header-content .event-card .card-title {
         text-align: center;
         text-transform: uppercase;
@@ -68,7 +68,8 @@ header {
       font-family: SourceSansPro-Regular;
       font-size: 42px;
       color: #FFFFFF;
-      letter-spacing: 0.06px; }
+      letter-spacing: 0.06px;
+      margin-bottom: 0; }
     header .header-content .subtitle {
       font-family: SourceSansPro-Regular;
       font-size: 17px;
@@ -119,7 +120,6 @@ section {
   #board h4 {
     text-align: center; }
   #board .carousel {
-    margin-top: 5rem;
     height: 15rem;
     text-align: center; }
     #board .carousel .carousel-item img {
@@ -156,18 +156,20 @@ section {
   height: 17rem; }
   #misc .container {
     z-index: 5; }
-  #misc .card .card-content .card-title {
-    font-size: 17px;
-    font-weight: 600;
-    color: #B76AC4;
-    letter-spacing: 1.1px;
-    text-transform: uppercase; }
-  #misc .card .card-content p {
-    color: #6B7C93; }
-  #misc .card .card-logo {
-    height: 150px; }
-    #misc .card .card-logo .valign-wrapper {
-      height: 100%; }
+  #misc .card {
+    padding-left: 20px; }
+    #misc .card .card-content .card-title {
+      font-size: 17px;
+      font-weight: 600;
+      color: #B76AC4;
+      letter-spacing: 1.1px;
+      text-transform: uppercase; }
+    #misc .card .card-content p {
+      color: #6B7C93; }
+    #misc .card .card-logo {
+      height: 150px; }
+      #misc .card .card-logo .valign-wrapper {
+        height: 100%; }
   #misc:before {
     content: '';
     z-index: 0;

@@ -44,7 +44,7 @@ body {
 header {
     overflow: hidden;
     position: relative;
-    height: 80vh;
+    height: 650px;
     /* Rectangle: */
     background-image: linear-gradient(-21deg, #A6FFCB 0%, #05D5FF 25%, #5533FF 80%);
 
@@ -58,7 +58,7 @@ header {
     }
 
     .header-content {
-        margin-top: 10vh;
+        margin-top: 80px;
 
         .text-content {
         }
@@ -66,9 +66,9 @@ header {
         .event-card {
             overflow: visible;
             z-index: 5;
-            height: 55vh;
+            height: 450px;
             padding: 10px;
-            width: 130%;
+            width: 450px;
 
             .card-title {
                 text-align: center;
@@ -95,6 +95,7 @@ header {
             font-size: 42px;
             color: #FFFFFF;
             letter-spacing: 0.06px;
+            margin-bottom: 0;
         }
         .subtitle {
             font-family: SourceSansPro-Regular;
@@ -172,7 +173,6 @@ section {
         text-align: center;
     }
     .carousel {
-        margin-top: 5rem;
         height: 15rem;
         text-align: center;
 
@@ -232,6 +232,8 @@ section {
     }
 
     .card {
+        padding-left: 20px;
+
         .card-content {
             .card-title {
                 font-size: 17px;
