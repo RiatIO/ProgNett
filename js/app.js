@@ -44,15 +44,14 @@ Vue.component('contact-form', {
     methods: {
         sendForm() {
             const text = "Person: " + this.form.name + " med mail: " + this.form.email + " skriver: " + this.form.message;
-            axios.get('https://slack.com/api/chat.postMessage?token=xoxp-159749655073-160773494196-161110113941-faf5b9184b9f5c13324e230c5225b4a5&channel=%23kontakt&text='+ text +'&pretty=1')
+            axios.get('https://slack.com/api/chat.postMessage?token=xoxp-159749655073-160773494196-161110113941-faf5b9184b9f5c13324e230c5225b4a5&username=ProgNett&channel=%23kontakt&text='+ text +'&pretty=1')
             .then(res => {
+                Materialize.toast('Takk, din forespørsel er nå registrert! 😇', 4000);
                 this.form.name = '';
                 this.form.email = '';
                 this.form.message = '';
             })
-            .catch(err => console.log(err));
-
-
+            .catch(err => Materialize.toast('Uff, noe gikk galt! Vennligst kom til Bliss og informer oss med hvordan og hvorfor', 4000));
         }
     }
 });
