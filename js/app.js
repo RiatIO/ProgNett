@@ -70,15 +70,23 @@ Vue.component('memeber-form', {
     methods: {
         sendForm() {
             // Form
-            axios.post('https://script.google.com/macros/s/AKfycbxaSu7aykHS8szZE2S9q6IF4e8csrw4lxx1NSCJE8WuQ-fkbkUX/exec', JSON.stringify(this.form))
+            axios({
+                method: 'post',
+                url: 'https://script.google.com/macros/s/AKfycbxaSu7aykHS8szZE2S9q6IF4e8csrw4lxx1NSCJE8WuQ-fkbkUX/exec',
+                data: JSON.stringify(this.form),
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                }
+            })
             .then(res => {
                 $('#addmemeber').modal('close');
-                Materialize.toast("Velkommen som ProgSys medlem, " + this.form.firstname, 4000);
+                Materialize.toast("Velkommen som ProgSys-medlem, " + this.form.firstname, 4000);
+
                 this.form.firstname = '';
                 this.form.lastname = '';
                 this.form.email = '';
             })
-            .catch(err => console.log(err));
+            .catch(err => Materialize.toast('Uff, noe gikk galt! Vennligst kom til Bliss og informer oss', 4000));
         }
     }
 });
