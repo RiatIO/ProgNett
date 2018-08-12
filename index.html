@@ -61,30 +61,36 @@
     <script type="text/x-template" id="memeber-form">
         <form class="col s12" v-on:submit.prevent="sendForm">
             <div class="modal-content">
-                <h4>Bli Foreningsmedlem hos ProgSys</h4>
+                <h5>Bli Foreningsmedlem hos ProgSys</h5>
+                <div class="divider"></div>
+
+                <br>
                 <div class="row">
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="first_name" v-model="form.firstname" type="text" class="validate" required>
+                                <input id="first_name" placeholder="Ola" v-model="form.firstname" type="text" class="validate" required>
                                 <label for="first_name">Fornavn</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="last_name" v-model="form.lastname" type="text" class="validate" required>
+                                <input id="last_name" placeholder="Nordmann" v-model="form.lastname" type="text" class="validate" required>
                                 <label for="last_name">Etternavn</label>
                             </div>
                         </div>
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="email" v-model="form.email" type="email" class="validate" required>
+                                <input id="email" placeholder="ola@mail.com" v-model="form.email" type="email" class="validate" required>
                                 <label for="email">Email</label>
                             </div>
                         </div>
+
+                        <div class="row" align="center">
+                            <input type="checkbox" id="check" v-model="form.active">
+                            <label for="check">Jeg ønsker å være et aktivt foreningsmedlem!</label>
+                        </div>
                 </div>
-            </div>
-            <div class="modal-footer">
-                 <button class="btn waves-effect waves-light" type="submit" name="action">Bli Medlem
-                    >
-                </button>
+            
+                <center><input type="submit" value="Bli Medlem" class=" button-filled waves-effect waves-light btn-large"></input></center>
+
             </div>
         </form>
     </script>

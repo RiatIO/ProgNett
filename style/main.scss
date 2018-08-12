@@ -216,7 +216,20 @@ section {
     .container {
         width: 50%;
     }
+}
 
+#addmemeber {
+    input[type='email'], input[type="text"], textarea {
+        margin-top: 10px;
+        /* Rectangle 29 Copy 3: */
+        background: #F7F7F7;
+        border: 1px solid #E3E3E3;
+        padding-left: 10px;
+    }
+
+    .container {
+        width: 50%;
+    }
 }
 
 #misc {

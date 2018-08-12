@@ -63,7 +63,8 @@ Vue.component('memeber-form', {
             form: {
                 firstname: '',
                 lastname: '',
-                email: ''
+                email: '',
+                active: false
             }
         }
     },
@@ -85,6 +86,7 @@ Vue.component('memeber-form', {
                 this.form.firstname = '';
                 this.form.lastname = '';
                 this.form.email = '';
+                this.form.active = false;
             })
             .catch(err => Materialize.toast('Uff, noe gikk galt! Vennligst kom til Bliss og informer oss', 4000));
         }
