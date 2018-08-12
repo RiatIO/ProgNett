@@ -8,7 +8,7 @@ Vue.component('bliss-status', {
     mounted: function() {
         var self = this;
 
-        axios.get('https://slack.com/api/channels.history?token=xoxp-159749655073-160773494196-161110113941-faf5b9184b9f5c13324e230c5225b4a5&channel=C4Q9MLVDW&pretty=1')
+        axios.get('https://slack.com/api/channels.history?token=xoxp-159749655073-160925755300-415322043205-0d757ec7f9ed4aa82359df793c582a31&channel=C4Q9MLVDW&pretty=1')
         .then(res => {
             var data = res.data['messages'];
 
@@ -44,7 +44,7 @@ Vue.component('contact-form', {
     methods: {
         sendForm() {
             const text = "Person: " + this.form.name + " med mail: " + this.form.email + " skriver: " + this.form.message;
-            axios.get('https://slack.com/api/chat.postMessage?token=xoxp-159749655073-160773494196-161110113941-faf5b9184b9f5c13324e230c5225b4a5&username=ProgNett&channel=%23kontakt&text='+ text +'&pretty=1')
+            axios.get('https://slack.com/api/chat.postMessage?token=xoxp-159749655073-160925755300-415322043205-0d757ec7f9ed4aa82359df793c582a31&username=ProgNett&channel=%23kontakt&text='+ text +'&pretty=1')
             .then(res => {
                 Materialize.toast('Takk, din forespørsel er nå registrert! 😇', 4000);
                 this.form.name = '';
@@ -52,6 +52,26 @@ Vue.component('contact-form', {
                 this.form.message = '';
             })
             .catch(err => Materialize.toast('Uff, noe gikk galt! Vennligst kom til Bliss og informer oss med hvordan og hvorfor', 4000));
+        }
+    }
+});
+
+Vue.component('memeber-form', {
+    template: '#memeber-form',
+    data: function() {
+        return {
+            form: {
+                firstname: '',
+                lastname: '',
+                email: ''
+            }
+        }
+    },
+    methods: {
+        sendForm() {
+            // Form
+            Materialize.toast("hei " + this.form.firstname, 4000);
+            $('#addmemeber').modal('close');
         }
     }
 });

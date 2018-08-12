@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>ProgNett - Linjeforening for ProgNett og ProSa</title>
+    <title>ProgSys - Linjeforening for ProgNett og ProSa</title>
 
     <meta name="description" content="Linjeforening for ProgNett og ProSa">
     <meta name="author" content="NEZT">
@@ -57,6 +57,37 @@
             </div>
         </div>
     </script>
+
+    <script type="text/x-template" id="memeber-form">
+        <form class="col s12" v-on:submit.prevent="sendForm">
+            <div class="modal-content">
+                <h4>Bli Foreningsmedlem hos ProgSys</h4>
+                <div class="row">
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="first_name" v-model="form.firstname" type="text" class="validate" required>
+                                <label for="first_name">Fornavn</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <input id="last_name" v-model="form.lastname" type="text" class="validate" required>
+                                <label for="last_name">Etternavn</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="email" v-model="form.email" type="email" class="validate" required>
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                 <button class="btn waves-effect waves-light" type="submit" name="action">Bli Medlem
+                    >
+                </button>
+            </div>
+        </form>
+    </script>
     <!--   ** VUE Components **   -->
 
     <!--   ** DOM **  -->
@@ -105,10 +136,10 @@
 
                     <div class="text-content col s6 pull-s6">
                         <br>
-                        <h1 class="title white-text">Velkommen til ProgNett</h1>
+                        <h1 class="title white-text">Velkommen til ProgSys</h1>
                         <p class="subtitle flow-text white-text">Linjeforeningen for Programmering og Nettverk og Programmering og Systemarkitektur ved Universitet i Oslo.</p>
                         <br>
-                        <a  onclick="Materialize.toast('Tjenesten er under utvikling! 😓', 2000)" class="button-filled waves-effect waves-light btn-large">Bli medlem</a>
+                        <a  href="#addmemeber" class="button-filled waves-effect waves-light btn-large">Bli medlem</a>
                         <a href="#contact-us" class="button-hallow aves-effect waves-light btn-large">Kom i Kontakt</a>
                     </div>
                 </div>
@@ -118,7 +149,7 @@
         <section id="about-us">
             <div class="container">
                 <h3 class="title"> Om Oss</h3>
-                <p class="subtitle">ProgNett er en studentforening ved Institutt for informatikk ved Universitetet i Oslo. Foreningens formål er å fremme det sosiale og faglige miljøet ved master- og bachelorprogrammene. Finn oss på programrommet Bliss 3427 eller følg oss på sosiale medier for å holde deg oppdatert om kommende arrangementer.</p>
+                <p class="subtitle">ProgSys er en studentforening ved Institutt for informatikk ved Universitetet i Oslo. Foreningens formål er å fremme det sosiale og faglige miljøet ved master- og bachelorprogrammene. Finn oss på programrommet Bliss 3427 eller følg oss på sosiale medier for å holde deg oppdatert om kommende arrangementer.</p>
             </div>
         </section>
 
@@ -161,12 +192,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col s6 m6">
-                        <a href="Materialize.toast('Tjenesten er under utvikling! 😓', 2000)">
+                        <a href="#addmemeber">
                             <div class="card white lighten-1 z-depth-2" data-aos="zoom-in">
                                 <div class="row">
                                     <div class="col s2 card-logo">
                                         <div class="valign-wrapper">
-                                            <img src="img/icons/stack2.svg" alt="">
+                                            <img height="100" width="86" src="img/icons/member.svg" alt="">
                                         </div>
                                     </div>
                                     <div class="col s10">
@@ -241,7 +272,7 @@
 
                     <br>
                     <div style="color: #939DA8">
-                        ProgNett © 2018. Alle rettigheter reservert.
+                        ProgSys © 2018. Alle rettigheter reservert.
                         <br>
                         <center> <label> Utviklet av <a href="http://www.nezt.no"> NEZT </a> </label> </center>
                     </div>
@@ -280,7 +311,14 @@
 
         <!-- {{ message }}
         <test></test> -->
+
+        <!-- Modal Structure -->
+        <div id="addmemeber" class="modal">
+            <memeber-form></memeber-form>
+        </div>
+
     </main>
+
     <!--   ** DOM **  -->
 
     <!--   ** Scripts **  -->
