@@ -70,11 +70,10 @@ Vue.component('memeber-form', {
     methods: {
         sendForm() {
             // Form
-            axios.post('https://script.google.com/macros/s/AKfycbxaSu7aykHS8szZE2S9q6IF4e8csrw4lxx1NSCJE8WuQ-fkbkUX/exec', this.form)
+            axios.post('https://script.google.com/macros/s/AKfycbxaSu7aykHS8szZE2S9q6IF4e8csrw4lxx1NSCJE8WuQ-fkbkUX/exec', JSON.stringify(this.form))
             .then(res => {
                 $('#addmemeber').modal('close');
-                Materialize.toast("Velkommen som ProgSys-medlem, " + this.form.firstname, 4000);
-
+                Materialize.toast("Velkommen som ProgSys medlem, " + this.form.firstname, 4000);
                 this.form.firstname = '';
                 this.form.lastname = '';
                 this.form.email = '';
