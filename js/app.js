@@ -51,7 +51,7 @@ Vue.component('contact-form', {
                 this.form.email = '';
                 this.form.message = '';
             })
-            .catch(err => Materialize.toast('Uff, noe gikk galt! Vennligst kom til Bliss og informer oss med hvordan og hvorfor', 4000));
+            .catch(err => Materialize.toast('Uff, noe gikk galt! Vennligst kom til Bliss og informer oss', 4000));
         }
     }
 });
@@ -70,8 +70,16 @@ Vue.component('memeber-form', {
     methods: {
         sendForm() {
             // Form
-            Materialize.toast("hei " + this.form.firstname, 4000);
-            $('#addmemeber').modal('close');
+            axios.post('https://script.google.com/macros/s/AKfycbxaSu7aykHS8szZE2S9q6IF4e8csrw4lxx1NSCJE8WuQ-fkbkUX/exec', this.form)
+            .then(res => {
+                $('#addmemeber').modal('close');
+                Materialize.toast("Velkommen som ProgSys-medlem, " + this.form.firstname, 4000);
+
+                this.form.firstname = '';
+                this.form.lastname = '';
+                this.form.email = '';
+            })
+            .catch(err => console.log(err));
         }
     }
 });
